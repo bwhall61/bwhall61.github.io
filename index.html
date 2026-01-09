@@ -34,8 +34,8 @@
             with Daniel Aalberts.
         </p>
         <p>
-            At UCSF I work in structure based drug discovery and devleop methods to more 
-            efficeintly traverse chemical space with molecular docking.
+            At UCSF I work in structure based drug discovery and develop methods to more 
+            efficiently traverse chemical space with molecular docking.
         </p>
         <p>
             In my free time I enjoy playing pickup volleyball and exploring the bars
@@ -47,8 +47,8 @@
     <div id="research-content" class="content">
       <div class="text-container">
         <p class="top-title">
-            At a high level I'm interested in how cheminformatic and machine learning
-            approaches can be applied to aid in the field of drug discovery with an emphasis
+            At a high level I'm interested in cheminformatic and machine learning
+            approaches to drug discovery with an emphasis
             on virtual screening and molecular docking. As with most computational biophysics, virtual
             screening comes down to two things:
           <p>
@@ -90,39 +90,54 @@
           <img src="rad.png"></img>
         </div>
         <p>
-            Molecular docking is a method that computationally predicts how well molecules
-            bind to proteins as a way to screen for potential drugs. Docking the tens to hundreds
+            Molecular docking is a method to computationally predict how molecules
+            bind to proteins. Docking the tens to hundreds
             of billions of commercially available molecules takes significant computational
-            resources and considerable time. We found that pre-organizing chemical
-            libraries into hierarchical navigable small world (HNSW) graphs
-            allows us to find a majority of the best molecules while docking only a fraction of the total library,
-            saving significant time, and allowing us to explore many more chemotypes. We retrospectively
-            demonstrated this method for screening 100 million molecules
+            resources and considerable time. We found that organizing chemical
+            libraries into Hierarchical Navigable Small World (HNSW) graphs
+            allows us to recover a majority of the best molecules while docking only a fraction of the total library. 
+            We demonstrated this method retrospectively, screening a library of 100 million molecules
             against 2 receptors with 2 different scoring functions.
         </p>
         <p>
-            For more info see the <a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.4c00683">paper</a>
-            or the <a href="https://github.com/keiserlab/rad">github repo</a>
+            For more info see <a href="https://rad.docking.org"> the website</a>, the 
+            <a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.4c00683">paper</a>,
+            or the <a href="https://github.com/keiserlab/rad">github repo</a>.
         </p>
-        <p class='project-title'> Saturday Night Science </p>
+        <p class='project-title'> <a href=https://lsd.docking.org>lsd.docking.org</a> </p>
         <p>
-            As part of a UCSF donor outreach event, I created an
-            interactive drug design experience to highlight how ML is being used in
-            drug discovery. Participants were split into groups and worked
-            to build physical molecular models which were then scanned via webcam to a computer where their
-            molecules could be docked, scored, and explored in virtual reality. All the while, they competed
-            against ML models which were doing high throughput virtual screening and small molecule diffusion. A central
-            leaderboard visualized the diffusion process, highlighted the speed at which ML methods explore
-            chemical space compared to humans, and showed the best scoring molecules discovered by each group and the
-            different ML methods.
+            While molecular docking campaigns of hundreds of millions to billions of molecules are performed, the results are rarely shared in full.
+            We developed a website providing access to poses, scores, and <i>in vitro</i> results for molecular docking campaigns against 
+            11 targets, with 6.3 billion molecules docked and 3729 compounds experimentally tested.
+            We used the new database to train machine learning models to predict docking scores and combined these models with
+            my chemical space exploration method, Retrieval Augmented Docking.
+        </p>
+        <p>
+        For more info see <a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.5c00394">the paper</a>
+        or <a href="https://lsd.docking.org"> the database</a>.
+        </p>
+        <p class='project-title top-title'>Large scale prospective evaluation of co-folding across
+557 Mac1-ligand complexes and three virtual screens</p>
+        <div class="project-img-container">
+          <img src="rad.png"></img>
+        </div>
+        <p>
+            While deep learning co-folding methods (Alphafold3, Boltz-2, Chai-1) can help address the challenges 
+            of predicting ligand-bound protein complexes and ranking them, their evaluation has been hampered by data leakage and insufficiently
+            large test sets. We tested the ability of co-folding methods to predict the structures of 557 ligands bound to the SARS-CoV-2 macrodomain.
+            We also assessed whether co-folding methods could rescore molecular docking hit-lists to distinguish true ligands
+            from non-binders among hundreds of molecules tested against AmpC β-lactamase, and the dopamine D4 and the σ2 receptors. 
+        </p>
+        <p>
+            For more info see <a href="https://www.biorxiv.org/content/10.64898/2025.12.25.696505v2">the preprint</a>.
         </p>
         <p class='project-title'> Ribosome Profiling Data </p>
-            Ribosome profiling is a method to identify the ribosome pause sites within the transcriptome.
-            Performing this technique in E. Coli requires an enzyme that demonstrates significant sequence
-            bias during RNA cleavage. This hampers our ability to precisely determine the position of the
-            ribosomes. We use 3' count assignment, pooling, and a debiasing method to more accurately
-            predict the location of ribosomes. We use this improved data to calculate relative codon stalling rates
-            and find that they are not strongly correlated with relative tRNA concentrations.
+            Ribosome profiling is a method to identify ribosome pause sites within the transcriptome.
+            In E. Coli, the method requires an enzyme that demonstrates significant sequence
+            bias during RNA cleavage, hampering the ability to precisely determine the position of
+            ribosomes. We used 3' count assignment, pooling, and a debiasing method to more accurately
+            predict the location of ribosomes. We used this improved data to show that relative codon stalling rates
+            are not strongly correlated with relative tRNA concentrations as frequently suggested.
         <p>
             Preprint coming soon
         </p>
